@@ -1,7 +1,7 @@
 # Project Plan
 
 ## Title
-Analyzing the Temperature and Air Quality Dynamics in Bangalore.
+Analyzing the temperature and air quality dynamics in Bangalore.
 
 ## Main Question
 
@@ -12,7 +12,7 @@ Analyzing the Temperature and Air Quality Dynamics in Bangalore.
 
 ## Description
 
-The project aims to explore and understand the relationship between temperature and Air Quality Index (AQI) in Bangalore. Understanding this relationship is crucial for following reasons:
+The project aims to explore and understand the relationship between temperature and air quality index (AQI) in Bangalore. Understanding this relationship is crucial for following reasons:
 
 1. Climate (temperature) and air quality are two critical factors that influence the health and living of urban population. 
 2. Bangalore (Silicon Valley of India) is a rapidly growing metropolitan area that faces unique environmental challenges. 
