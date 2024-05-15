@@ -1,7 +1,7 @@
 # Project Plan
 
 ## Title
-Analyzing of Temperature and Air Quality Dynamics in Bangalore
+Analyzing the Temperature and Air Quality Dynamics in Bangalore.
 
 ## Main Question
 
@@ -45,14 +45,14 @@ The CSV file contains data of Bangalore city which have the Air Quality Index in
    - Gather Temperature and AQI data sources.
 
 2. **Data Preprocessing and Cleaning** [#2][i2]
-  - Merge and integrate the temperature and AQI datasets, aligning them on common timestamps.
-  - Perform data cleaning operations, such as handling missing values.
+   - Merge and integrate the temperature and AQI datasets, aligning them on common timestamps.
+   - Perform data cleaning operations, such as handling missing values.
 
 3. **Data Analysis** [#3][i3]
-  - Explore the relationship between temperature and AQI through visualizations.
+   - Explore the relationship between temperature and AQI through visualizations.
 
 4. **Testing and Report** [#4][i4]
-  - Record the findings and insights from the analysis in the report.
+    - Record the findings and insights from the analysis in the report.
    
 
 [i1]: https://github.com/apoorvav-github/made-template-fau/issues/1
