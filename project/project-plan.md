@@ -14,9 +14,9 @@ Analyzing of Temperature and Air Quality Dynamics in Bangalore
 
 The project aims to explore and understand the relationship between temperature and Air Quality Index (AQI) in Bangalore. Understanding this relationship is crucial for following reasons:
 
-1. Climate (temperature) and air quality are two critical factors that influence the health and living of urban populations. 
-2. Bangalore, known as the Silicon Valley of India, is a rapidly growing metropolitan area that faces unique environmental challenges. 
-3. As the city expands and industrializes, it experiences notable variations in temperature and air quality, both of which have a huge impacts on public health, urban planning, and environmental sustainability.
+1. Climate (temperature) and air quality are two critical factors that influence the health and living of urban population. 
+2. Bangalore (Silicon Valley of India) is a rapidly growing metropolitan area that faces unique environmental challenges. 
+3. As the city expands and industrializes, it experiences notable variations in temperature and air quality, which may have a huge impacts on public health, urban planning, and environmental sustainability.
 
 
 
