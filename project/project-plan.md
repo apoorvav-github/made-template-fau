@@ -1,40 +1,34 @@
 # Project Plan
 
 ## Title
-Analyzing the temperature and air quality dynamics in Bangalore.
+Analyzing the temperature change and crop yield dynamics in Ireland from 2009 to 2023.
 
 ## Main Question
-
-1. What are the trends in temperature and AQI over time?
-2. What are the daily and weekly patterns in temperature and AQI?
-3. Is there a correlation between temperature and AQI levels?
-4. Are there any significant anomalies in temperature and AQI data?
+How is temperature change impacting the crop yeild over the years and if there is any pattern that can realized by visualization?
 
 ## Description
 
-The project aims to explore and understand the relationship between temperature and air quality index (AQI) in Bangalore. Understanding this relationship is crucial for following reasons:
+The project aims to explore and understand the relationship between temperature change and crop yield in Ireland. Understanding this relationship is crucial for following reasons:
 
-1. Climate (temperature) and air quality are two critical factors that influence the health and living of urban population. 
-2. Bangalore (Silicon Valley of India) is a rapidly growing metropolitan area that faces unique environmental challenges. 
-3. As the city expands and industrializes, it experiences notable variations in temperature and air quality, which may have a huge impacts on public health, urban planning, and environmental sustainability.
-
+1. Selecting the appropriate crops can help to improve the overall yield.
+2. Increases awareness on temperature impact on crops.
 
 
 ## Datasources
 
-### Datasource1: Weather data Indian cities
-* Metadata URL: https://www.kaggle.com/datasets/vanvalkenberg/historicalweatherdataforindiancities
-* Data URL: https://www.kaggle.com/datasets/vanvalkenberg/historicalweatherdataforindiancities
+### Datasource1: Temperature change countrywise
+* Metadata: https://www.fao.org/faostat/en/#data/ET/metadata
+* Dataset: https://bulks-faostat.fao.org/production/Environment_Temperature_change_E_Europe.zip
 * Data Type: CSV
 
-The CSV file contains temperatute and precipitation data for Bangalore from 1990 to 2022
+The CSV file contains temperatute change data for Ireland from 2008 to 2023
 
-### Datasource2: Bangalore 5 Year AQI Data
-* Metadata URL: https://www.kaggle.com/datasets/jimschacko/bangalore-5-year-aqi-data
-* Data URL: https://www.kaggle.com/datasets/jimschacko/bangalore-5-year-aqi-data?select=AQI+Data.csv
+### Datasource2: Crop Yield (2008 - 2023) - Ireland 
+* Metadata: https://data.gov.ie/dataset/aqa04-crop-yield-and-production/resource/58e1835b-c25d-41c0-b13f-e8680aeb13b9
+* Data URL: https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/AQA04/CSV/1.0/en
 * Data Type: CSV
 
-The CSV file contains data of Bangalore city which have the Air Quality Index information from the year 2018-2023.
+The CSV file contains data of crop yield in Ireland.
 
 
 
