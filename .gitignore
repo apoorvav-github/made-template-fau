@@ -1,3 +1,7 @@
 .DS_Store
 /data/*
 !/data/.gitkeep
+exercises/airports.sqlite
+exercises/trees.sqlite
+examples/data-exploration-example.ipynb
+examples/final-report-example.ipynb
