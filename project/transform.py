@@ -20,7 +20,7 @@ def process_temp_data(temp_df):
         # Filter data for Ireland
         ire_temp_df = temp_df[temp_df['Area'] == 'Ireland']
         
-        # Separate data for temperature change and standard deviation
+        # Split data for temperature change and standard deviation
         ire_temp_change = ire_temp_df[ire_temp_df['Element Code'] == 7271]
         ire_std_deviation = ire_temp_df[ire_temp_df['Element Code'] == 6078]
         

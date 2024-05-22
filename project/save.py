@@ -1,6 +1,8 @@
 import os
 import logging
 
+logging.basicConfig(level=logging.INFO)
+
 def save_temperature_data_to_csv(ire_temp_data):
     """
     Saves the temperature change and standard deviation DataFrames to CSV files in a 'data' directory.
@@ -36,9 +38,6 @@ def save_temperature_data_to_csv(ire_temp_data):
         print("Saved All Files")
     except Exception as e:
         logging.error(f"An error occurred while saving files: {e}")
-
-# Ensure logging is configured to show messages
-logging.basicConfig(level=logging.INFO)
 
 
 

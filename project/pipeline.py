@@ -1,6 +1,5 @@
 import os
 import logging
-import requests
 import pandas as pd
 from extract import get_temperature_data, get_crop_yield_data
 from transform import process_temp_data, process_crop_data
