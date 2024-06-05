@@ -4,14 +4,14 @@
 Analyzing the temperature change and crop yield dynamics in Ireland from 2009 to 2023.
 
 ## Main Question
-How is temperature change impacting the crop yield over the years and if there is any pattern that can realized by visualization?
+How is temperature change impacting the crop yield over the years and if there is any pattern that can be realized by visualization?
 
 ## Description
 
 The project aims to explore and understand the relationship between temperature change and crop yield in Ireland. Understanding this relationship is crucial for following reasons:
 
 1. Selecting the appropriate crops can help to improve the overall yield.
-2. Increases awareness on temperature impact on crops.
+2. Increases awareness of temperature impact on crops.
 
 
 ## Datasources
