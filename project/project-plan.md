@@ -4,7 +4,7 @@
 Analyzing the temperature change and crop yield dynamics in Ireland from 2009 to 2023.
 
 ## Main Question
-How is temperature change impacting the crop yeild over the years and if there is any pattern that can realized by visualization?
+How is temperature change impacting the crop yield over the years and if there is any pattern that can realized by visualization?
 
 ## Description
 
@@ -21,10 +21,10 @@ The project aims to explore and understand the relationship between temperature 
 * Dataset: https://bulks-faostat.fao.org/production/Environment_Temperature_change_E_Europe.zip
 * Data Type: CSV
 
-The CSV file contains temperatute change data for Ireland from 2008 to 2023
+The CSV file contains temperature change data for Ireland from 1961 to 2023
 
 ### Datasource2: Crop Yield (2008 - 2023) - Ireland 
-* Metadata: https://data.gov.ie/dataset/aqa04-crop-yield-and-production/resource/58e1835b-c25d-41c0-b13f-e8680aeb13b9
+* Metadata: https://data.gov.ie/dataset/aqa04-crop-yield-and-production/resource/ca2113ee-d9f3-4654-acc6-777213ae9330
 * Data URL: https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/AQA04/CSV/1.0/en
 * Data Type: CSV
 
