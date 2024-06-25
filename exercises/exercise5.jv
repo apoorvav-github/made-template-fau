@@ -1,0 +1,72 @@
+//  Pipeline for GTFSData data
+pipeline GTFSDataPipeline {
+    GTFSDataExtractor 
+      -> GTFSDataArchiveInterpreter
+      -> GTFSDataFilePicker
+      -> GTFSDataTextFileInterpreter
+      -> GTFSDataCSVInterpreter
+      -> GTFSDataColumnDeleter
+      -> GTFSDataTableInterpreter
+      -> GTFSDataLoader;
+
+    block GTFSDataExtractor oftype HttpExtractor{
+        url: "https://gtfs.rhoenenergie-bus.de/GTFS.zip";
+    }
+
+    block GTFSDataArchiveInterpreter oftype ArchiveInterpreter{
+        archiveType: "zip";
+    }
+
+    block GTFSDataFilePicker oftype FilePicker {
+        path: "/stops.txt";
+    }
+
+    // Interpret the stops.txt File with utf8 that allows german umlaut
+    block GTFSDataTextFileInterpreter oftype TextFileInterpreter {
+        encoding: "utf8";
+    }
+
+    block GTFSDataCSVInterpreter oftype CSVInterpreter {
+        delimiter: ',';
+        enclosing: '"'; 
+		    enclosingEscape: '"';
+    }
+
+    block GTFSDataColumnDeleter oftype ColumnDeleter {
+        delete: [column B, column D, column H, column I, column J, column K, column L];
+    }
+
+    valuetype GeoCoordinate_90 oftype decimal {
+        constraints: [GeoCoordinateConstraint];
+        }
+
+    constraint GeoCoordinateConstraint oftype RangeConstraint {
+        lowerBound: -90;
+        lowerBoundInclusive: true;
+        upperBound: 90;
+        upperBoundInclusive: true;
+        }
+    
+    valuetype Zone_1645 oftype integer{
+        constraints: [ZoneConstraint];
+    }
+
+    constraint ZoneConstraint on integer:
+        value == 1645;
+
+    block GTFSDataTableInterpreter oftype TableInterpreter {
+        header: true;
+        columns: [
+            "stop_id" oftype integer,
+            "stop_name" oftype text,
+            "stop_lat" oftype GeoCoordinate_90,
+            "stop_lon" oftype GeoCoordinate_90,
+            "zone_id" oftype Zone_1645,
+        ];
+    }
+
+    block GTFSDataLoader oftype SQLiteLoader {
+        table: "stops";
+        file: "gtfs.sqlite";
+    }
+}
