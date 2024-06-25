@@ -1,0 +1,36 @@
+name: Pipeline Feedback
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - project/**
+
+jobs:
+  pipeline-feedback:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project Reps.
+        uses: actions/checkout@v3
+
+      - name: Set python version 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r project/requirements.txt
+      
+      - name: Check if directory exists and tests.sh location
+        run: |
+          ls -l ./project
+          find ./project -name "tests.sh"
+  
+      - name: Run test.sh
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          chmod +x ./project/tests.sh
+          ./project/tests.sh
+          echo "> Pipeline Test Done!"
