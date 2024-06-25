@@ -29,7 +29,6 @@ jobs:
           find ./project -name "tests.sh"
   
       - name: Run test.sh
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           chmod +x ./project/tests.sh
           ./project/tests.sh
