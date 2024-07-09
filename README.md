@@ -10,12 +10,10 @@ Before you begin, make sure you have [Python](https://www.python.org/) and [Jayv
 
 
 ## Project Work
-Your data engineering project will run alongside lectures during the semester. We will ask you to regularly submit project work as milestones so you can reasonably pace your work. All project work submissions **must** be placed in the `project` folder.
-
-### Main Question
+### Main Question:
 How is temperature change impacting the crop yield over the years and if there is any pattern that can be realized by visualization?
 
-### Description
+### Description:
 
 The project aims to explore and understand the relationship between temperature change and crop yield in Ireland. Understanding this relationship is crucial for following reasons:
 
@@ -23,7 +21,7 @@ The project aims to explore and understand the relationship between temperature 
 2. Increases awareness of temperature impact on crops.
 
 
-### Datasources
+### Datasources:
 
 #### Datasource1: Temperature change countrywise
 * Metadata: https://www.fao.org/faostat/en/#data/ET/metadata
